@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>krishna tricking</title>
+        <link rel="stylesheet" href="naviagtion.css">
+        <style>
+            #div3{
+
+                background-color:antiquewhite;
+                width: 600px;
+                padding: 50px;
+                font-size: 20px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color:deeppink;
+            }
+            h1{
+                color: blue;
+            }
+            h2{
+                color:crimson;
+                background-color: yellowgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="krishna.html">KRISHNA TRICKING</a>
+        </header>
+        <nav>
+            <a href="krishna.html">HOME</a>
+            <a href="">CONTACT</a>
+            <a href="about.html">ABOUT</a>
+            <a href="">MORE</a>
+            
+        </nav>
+        <div id="div1">
+            <h1>Random number guessing  :</h1>
+            <p> random number guessing game is very interesting game. in this game we we need to select lower number and bigger number. then system picks a number between lower and bigger number. we need to guess that number. system will you 7 chances. </p>
+            <p> <h2>steps to build game : <br></h2></p>
+            <p>
+                First we need to import random package. so that we need to go command prompt and type "pip install random" and click enter. after that system will install the random module and it is ready to use.
+                 
+            </p>
+            <p>
+                <h2>Programming code :</h2>
+                <p id="div3">
+                    import random <br>
+                    ll=int(input('enter a lower limit number :'))<br>
+                    ul=int(input('enter a upper limit number :'))<br>
+                    randoml=random.randint(ll,ul)<br>
+                    e=0<br>
+                    while e<8:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;    e=e+1<br>
+                        
+                    &nbsp;&nbsp;    user=int(input('guess a number between '))<br>
+                    &nbsp;&nbsp;    if user==randoml:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;        print('your are guess is correct...',randoml)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;   break<br>
+                    &nbsp;&nbsp;   elif user>randoml:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;       print('you are guessed higher number...')<br>
+                    &nbsp;&nbsp; elif user lessthan randoml: <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;      print('you are guessed lower number... ')<br>
+                    &nbsp;&nbsp;   if e==7:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;       print('your chances are over ')<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;       print('\n better luck next time..')<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;      break<br>
+                </p>
+            </p>
+
+        <p><h2>OUTPUT :</h2>
+        <img src="rando.png" alt="">
+        </p>
+        </div>
+    </body>
+</html>
